@@ -4,7 +4,7 @@ HowTo
 1. Edit dev.env.json<br/>
    Change "Servers" "Name" to a server you want to test deployment of samples to<br/>
    For more servers just add:<br/>
-```js
+```
 { "Name" : "server1"},
 { "Name" : "server2"},
 { "Name" : "server n" }
