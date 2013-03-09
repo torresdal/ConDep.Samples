@@ -32,25 +32,25 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ConDep, Version=1.0.10.311, Culture=neutral, processorArchitecture=x86">
+    <Reference Include="ConDep, Version=1.0.12.322, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\ConDep.1.0.10\lib\net40\ConDep.exe</HintPath>
+      <HintPath>..\packages\ConDep.1.0.12\lib\net40\ConDep.exe</HintPath>
     </Reference>
-    <Reference Include="ConDep.Dsl, Version=1.0.10.311, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="ConDep.Dsl, Version=1.0.12.322, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\ConDep.Dsl.1.0.10\lib\net40\ConDep.Dsl.dll</HintPath>
+      <HintPath>..\packages\ConDep.Dsl.1.0.12\lib\net40\ConDep.Dsl.dll</HintPath>
     </Reference>
-    <Reference Include="ConDep.Remote, Version=1.0.10.311, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="ConDep.Remote, Version=1.0.12.322, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\ConDep.1.0.10\lib\net40\ConDep.Remote.dll</HintPath>
+      <HintPath>..\packages\ConDep.1.0.12\lib\net40\ConDep.Remote.dll</HintPath>
     </Reference>
     <Reference Include="ConDep.WebQ.Client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\ConDep.1.0.10\lib\net40\ConDep.WebQ.Client.dll</HintPath>
+      <HintPath>..\packages\ConDep.1.0.12\lib\net40\ConDep.WebQ.Client.dll</HintPath>
     </Reference>
     <Reference Include="ConDep.WebQ.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\ConDep.1.0.10\lib\net40\ConDep.WebQ.Data.dll</HintPath>
+      <HintPath>..\packages\ConDep.1.0.12\lib\net40\ConDep.WebQ.Data.dll</HintPath>
     </Reference>
     <Reference Include="log4net">
       <HintPath>..\packages\log4net.2.0.0\lib\net40-full\log4net.dll</HintPath>
@@ -62,7 +62,7 @@
     </Reference>
     <Reference Include="SlowCheetah.Tasks, Version=1.0.10727.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\ConDep.1.0.10\lib\net40\SlowCheetah.Tasks.dll</HintPath>
+      <HintPath>..\packages\ConDep.1.0.12\lib\net40\SlowCheetah.Tasks.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
