@@ -14,6 +14,7 @@ namespace AspNetWebFormApp
         {
             // Code that runs on application startup
             AuthConfig.RegisterOpenAuth();
+            Application.Add("HostId", Guid.NewGuid().ToString());
         }
 
         void Application_End(object sender, EventArgs e)

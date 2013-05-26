@@ -13,6 +13,7 @@
                 If you have any questions about ASP.NET visit
                 <a href="http://forums.asp.net/18.aspx" title="ASP.NET Forum">our forums</a>.
             </p>
+            <p>Version 1.1</p>
         </div>
     </section>
 </asp:Content>
@@ -36,4 +37,5 @@
             <a href="http://go.microsoft.com/fwlink/?LinkId=245143">Learn more…</a>
         </li>
     </ol>
+    <span><%= Application["HostId"].ToString() %></span>
 </asp:Content>

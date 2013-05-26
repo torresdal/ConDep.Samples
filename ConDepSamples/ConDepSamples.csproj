@@ -32,40 +32,65 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ConDep, Version=1.0.12.322, Culture=neutral, processorArchitecture=x86">
+    <Reference Include="AWSSDK, Version=1.5.20.0, Culture=neutral, PublicKeyToken=9f476d3089b52be3, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\ConDep.1.0.12\lib\net40\ConDep.exe</HintPath>
+      <HintPath>..\packages\AWSSDK.1.5.20.0\lib\AWSSDK.dll</HintPath>
     </Reference>
-    <Reference Include="ConDep.Dsl, Version=1.0.12.322, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="ConDep, Version=2.0.0.13, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\ConDep.Dsl.1.0.12\lib\net40\ConDep.Dsl.dll</HintPath>
+      <HintPath>..\packages\ConDep.2.0.0-beta\lib\net40\ConDep.exe</HintPath>
     </Reference>
-    <Reference Include="ConDep.Remote, Version=1.0.12.322, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="ConDep.Dsl, Version=2.0.0.13, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\ConDep.1.0.12\lib\net40\ConDep.Remote.dll</HintPath>
+      <HintPath>..\..\ConDep\ConDep.Dsl\bin\Debug\ConDep.Dsl.dll</HintPath>
+    </Reference>
+    <Reference Include="ConDep.Remote, Version=2.0.0.13, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ConDep.2.0.0-beta\lib\net40\ConDep.Remote.dll</HintPath>
     </Reference>
     <Reference Include="ConDep.WebQ.Client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\ConDep.1.0.12\lib\net40\ConDep.WebQ.Client.dll</HintPath>
+      <HintPath>..\packages\ConDep.2.0.0-beta\lib\net40\ConDep.WebQ.Client.dll</HintPath>
     </Reference>
     <Reference Include="ConDep.WebQ.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\ConDep.1.0.12\lib\net40\ConDep.WebQ.Data.dll</HintPath>
+      <HintPath>..\packages\ConDep.2.0.0-beta\lib\net40\ConDep.WebQ.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="ConDepNode, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ConDep.Node.2.0.0-beta\lib\net40\ConDepNode.exe</HintPath>
     </Reference>
     <Reference Include="log4net">
       <HintPath>..\packages\log4net.2.0.0\lib\net40-full\log4net.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Web.Delegation, Version=7.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
-    <Reference Include="Microsoft.Web.Deployment, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="NDesk.Options">
       <HintPath>..\packages\NDesk.Options.0.2.1\lib\NDesk.Options.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="SlowCheetah.Tasks, Version=1.0.10727.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\ConDep.1.0.12\lib\net40\SlowCheetah.Tasks.dll</HintPath>
+      <HintPath>..\packages\ConDep.2.0.0-beta\lib\net40\SlowCheetah.Tasks.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.30506.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.SelfHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.SelfHost.4.0.20918.0\lib\net40\System.Web.Http.SelfHost.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -77,6 +102,7 @@
     <Compile Include="DotNetWebAppWithInfrastructure\WebServerInfrastructure.cs" />
     <Compile Include="DotNetWebAppWithSSL\DotNetWebSslApplication.cs" />
     <Compile Include="DotNetWebAppWithSSL\WebServerSslInfrastructure.cs" />
+    <Compile Include="Operations\AmazonELB\AmazonElasticLoadBalancer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WindowsService\WindowsServiceApplication.cs" />
   </ItemGroup>

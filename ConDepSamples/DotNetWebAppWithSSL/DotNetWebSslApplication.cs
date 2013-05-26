@@ -5,7 +5,7 @@ namespace ConDepSamples.DotNetWebAppWithSSL
 {
     public class DotNetWebSslApplication : ApplicationArtifact, IDependOnInfrastructure<WebServerSslInfrastructure>
     {
-        public override void Configure(IOfferLocalOperations onLocalMachine, ConDepConfig config)
+        public override void Configure(IOfferLocalOperations onLocalMachine, ConDepSettings settings)
         {
             //Deploy a Web Application to remote server(s)
             onLocalMachine.ToEachServer
@@ -22,11 +22,11 @@ namespace ConDepSamples.DotNetWebAppWithSSL
             onLocalMachine
                 .HttpGet
                 (
-                    url: string.Format("http://{0}:8082/AspNetWebFormApp/", config.Servers[0].Name)
+                    url: string.Format("http://{0}:8082/AspNetWebFormApp/", settings.Config.Servers[0].Name)
                 )
                 .HttpGet
                 (
-                    url: string.Format("https://{0}:8083/AspNetWebFormApp/", config.Servers[0].Name)
+                    url: string.Format("https://{0}:8083/AspNetWebFormApp/", settings.Config.Servers[0].Name)
                 );
         }
     }

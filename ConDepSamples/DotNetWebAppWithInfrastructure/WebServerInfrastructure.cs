@@ -5,7 +5,7 @@ namespace ConDepSamples.DotNetWebAppWithInfrastructure
 {
     public class WebServerInfrastructure : InfrastructureArtifact
     {
-        public override void Configure(IOfferInfrastructure require, ConDepConfig config)
+        public override void Configure(IOfferInfrastructure require, ConDepSettings settings)
         {
             require
                 //Install IIS with Asp.net if not present
@@ -15,7 +15,7 @@ namespace ConDepSamples.DotNetWebAppWithInfrastructure
                 (
                     execute => execute
                         //Make sure Asp.NET 4.0 is registered with IIS
-                        .DosCommand(@"C:\Windows\Microsoft.NET\Framework\v4.0.30319\aspnet_regiis -i", options => options.WaitIntervalInSeconds(120))
+                        .DosCommand(@"C:\Windows\Microsoft.NET\Framework\v4.0.30319\aspnet_regiis -i")
 
                         //Allow traffic on port 8082 in Windows Firewall
                         .DosCommand(@"netsh advfirewall firewall add rule name='HTTP' protocol=TCP localport=8082 action=allow dir=IN")

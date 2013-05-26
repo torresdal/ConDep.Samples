@@ -5,23 +5,23 @@ namespace ConDepSamples.DotNetWebAppWithInfrastructure
 {
     public class DotNetWebApplication : ApplicationArtifact, IDependOnInfrastructure<WebServerInfrastructure>
     {
-        public override void Configure(IOfferLocalOperations onLocalMachine, ConDepConfig config)
+        public override void Configure(IOfferLocalOperations onLocalMachine, ConDepSettings settings)
         {
             //Deploy a Web Application to remote server(s)
             onLocalMachine.ToEachServer
-            (
-                server => server.Deploy.IisWebApplication
                 (
-                    sourceDir:      @"..\..\..\SampleApps\AspNetWebFormApp", 
-                    webAppName:     "AspNetWebFormApp", 
-                    webSiteName:    "ConDepSamples"
-                )
-            );
+                    server => server.Deploy.IisWebApplication
+                                  (
+                                      sourceDir: @"..\..\..\SampleApps\AspNetWebFormApp",
+                                      webAppName: "AspNetWebFormApp",
+                                      webSiteName: "ConDepSamples"
+                                  )
+                );
 
             //Test that the Web Application works by executing a HTTP GET (failes if not HTTP Code 200 is returned)
             onLocalMachine.HttpGet
             (
-                 url: string.Format("http://{0}:8082/AspNetWebFormApp/", config.Servers[0].Name)
+                 url: string.Format("http://{0}:8082/AspNetWebFormApp/", settings.Config.Servers[0].Name)
             );
         }
     }

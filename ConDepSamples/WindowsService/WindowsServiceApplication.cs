@@ -5,7 +5,7 @@ namespace ConDepSamples.WindowsService
 {
     public class WindowsServiceApplication : ApplicationArtifact
     {
-        public override void Configure(IOfferLocalOperations onLocalMachine, ConDepConfig config)
+        public override void Configure(IOfferLocalOperations onLocalMachine, ConDepSettings settings)
         {
             onLocalMachine.ToEachServer
             (
